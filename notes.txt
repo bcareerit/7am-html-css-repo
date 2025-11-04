@@ -1,0 +1,133 @@
+Positions
+*********
+CSS supports
+
+    1) absolute
+    2) relative
+    3) fixed
+    4) sticky
+    5) static
+
+absolute
+    child element movement depending on parent element movement
+
+    because of absolute position, other elements will effect on layout
+
+    syntax.
+            position : absolute;
+            left :  
+            right :
+            top : 
+            bottom : 
+
+CSS Dimensions
+**************
+    CSS supports following Dimensions
+
+    1) px (pixel)
+    2) rem (root em).   1rem = 16px
+    3) em
+    4) percentage. (%)
+    5) vh(viewport height) && vw(viewport width)
+
+rem
+***
+    rem stands for root em
+    1rem = 16px
+    all html elements Dimensions depending on root element Dimension
+    if root element(<html></html>) Dimension changes automatically all elements(<p>,<div>,<form>,....) Dimension also changes
+
+em
+**
+    child element Dimension depending on parent element Dimension
+
+% (percentage)
+**************
+    used to measure with respect to screen
+    Ex.
+        10%
+        50%
+    
+    child element dimension, depending on parent element dimension
+
+vw (viewport width).  && vh (viewport height)
+*********************************************
+
+     total width of the screen called as 100vw
+     total height of the screen called as 100vh
+
+    html elements dimensions depending on screen
+
+
+CSS Flex
+********
+    CSS Flex, used to move elements with respect to main axis
+    CSS Flex is one dimensional
+    CSS Flex by default Responsive
+    Ex.
+        display : flex;
+    in CSS Flex, parent and chid relationship mandatory
+
+1) display : flex;
+
+2) gap
+
+3) justify-content : flex-start / center / flex-end / space-between / space-around / space-evenly;
+
+    flex-start is the default value
+
+4) align-items : flex-start / center / flex-end / stretch;
+
+    stretch is the default value
+
+5) flex-direction : row / row-reverse / column / column-reverse;
+
+    row is the default value
+
+6) flex-wrap : wrap / wrap-reverse / nowrap;
+
+    nowrap is the default value
+
+7) order
+
+    order, used to change the order of flex items
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
