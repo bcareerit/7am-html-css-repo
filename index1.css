@@ -1,14 +1,13 @@
 body{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-.parent{
+.container{
     height: 100%;
 }
 .header{
     height: 15vh;
-   
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,32 +15,20 @@ body{
 .logo{
     width: 10vw;
 }
-.search_input{
-    width: 300px;
-    height: 30px;
-    
-    border-radius: 30px;
-    outline: none;
-}
-.search_input::placeholder{
-    color: lightsalmon;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: italic;
-}
 .menu{
     display: flex;
     gap: 20px;
-    margin-right: 20px;
+    font-size: 1.5vw;
+    margin-right: 10px;
 }
 .menu a{
     text-decoration: none;
-    font-size: 20px;
-    color: black;
+    color: black;   
 }
 .menu a:hover{
     color: orange;
 }
+
 .main{
     height: 75vh;
     
@@ -50,36 +37,40 @@ body{
 .image{
     flex: 1;
     
-    background-image: url("./laptop.jpeg");
- 
+    background-image: url("./logo.png");
+    background-repeat: no-repeat;
     background-position: center center;
 }
 .text{
     flex: 1;
-    
+   
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .text_1{
     font-size: 3vw;
+    color: gray;
 }
 [class^="text_"]:not(.text_1){
-    font-size: 1.5vw;
+    font-size: 1.7vw;
+    color: salmon;
 }
 
+
 .footer{
+    margin-right: 20px;
     height: 10vh;
-    
     display: flex;
     justify-content: flex-end;
     gap: 50px;
     align-items: center;
-    
 }
+
 .footer i{
-    margin-right: 50px;
-    font-size: 30px;
-    color: orange;
+    font-size: 2vw;
+    color: blue;
 }
