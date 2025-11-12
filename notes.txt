@@ -92,6 +92,47 @@ CSS Flex
 
     order, used to change the order of flex items
 
+pseudo classes
+**************
+    set special state to element
+    we will apply pseudo classes with ":"
+    Ex.
+        :hover
+        :first-of-type
+        :last-of-type
+        :first-child
+        :last-child
+        :nth-child
+        :checked
+        :focus
+        :not
+
+pseudo elements
+***************
+    pseudo elements are used to style the portion of element
+    we will apply pseudo elements with "::"
+
+    Ex.
+        ::before
+        ::after
+        ::first-letter
+        ::first-line
+        ::selection
+        ::marker
+
+Lists
+*****
+    1) unordered list
+    2) ordered list
+    3) definition list
+
+    <ul></ul>. ----  unordered list
+    <li></li>. ----  list item
+
+    <ol></ol> ----   ordered list
+
+    <dl></dl>. ----- definition list
+
 
 
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pseudo elements</title>
+    <style>
+        input[type="text"]::placeholder{
+            color: lightpink;
+        }
+
+        div::first-line{
+            background-color: lightblue;
+        }
+
+        div::first-letter{
+            font-size: 30px;
+            font-style: italic;
+        }
+        
+        div::selection{
+            background-color: lightsalmon;
+        }
+
+        p::before {
+            content: "👋 ";
+        }
+
+        p::after {
+            content: " 👈";
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="enter user name">
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, eius. Blanditiis, aut recusandae in cumque
+        quidem, ipsum illum veniam fugiat cum ea iste ullam laborum asperiores quos at impedit sed mollitia. Aliquid
+        maiores architecto error molestiae sint commodi sapiente maxime nobis amet fugit laboriosam minima earum,
+        explicabo facere dignissimos saepe. Alias voluptatum id sapiente illo quas voluptas culpa labore nam libero
+        ipsa? Rem a iure culpa cum incidunt nesciunt non exercitationem adipisci voluptates quaerat ducimus voluptatibus
+        quos officiis minima placeat quasi, deleniti nihil. Cupiditate aliquid sed, hic ad eaque sint ea nobis labore
+        magni blanditiis earum, et voluptate alias illo.
+    </div>
+
+
+    <p>CareerIT</p>
+    <p>CareerIT</p>
+    <p>CareerIT</p>
+    <p>CareerIT</p>
+    <p>CareerIT</p>
+</body>
+
+</html>

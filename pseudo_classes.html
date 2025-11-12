@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Classes</title>
+        <style>
+          span:not(.c2){
+            color: brown;
+          }
+           p:first-of-type{
+            color: red;
+           }
+           p:last-of-type{
+            color: blue;
+           }
+           input[type="checkbox"]:checked{
+                accent-color: red;
+           }
+           input[type="text"]:focus{
+                border: 2px solid red;
+                border-radius: 30px;
+                outline: none;
+           }
+            h1:hover{
+                background-color: orange;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <span>CareerIT - Online Training</span>
+        <span>CareerIT - Online Training</span>
+        <span class="c2">CareerIT - Online Training</span>
+        <span>CareerIT - Online Training</span>
+        <span>CareerIT - Online Training</span>
+
+
+        <p>CareerIT</p>
+        <p>CareerIT</p>
+        <p>CareerIT</p>
+        <p>CareerIT</p>
+        <p>CareerIT</p>
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="text">
+        <h1>CareerIT - MERN STACK || JFSD || AI</h1>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+ul,ol{
+    background-color: orange;
+    width: 15%;
+    display: inline-block;
+    margin: 30px;
+    border: 2px solid red;
+    border-radius: 30px;
+}
+li{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+li::marker{
+    color: red;
+}
+li:hover{
+    background-color: olive;
+}
