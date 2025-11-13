@@ -51,7 +51,7 @@ body{
     flex: 1;
     
     background-image: url("./laptop.jpeg");
- 
+    background-repeat: no-repeat;
     background-position: center center;
 }
 .text{
@@ -82,4 +82,37 @@ body{
     margin-right: 50px;
     font-size: 30px;
     color: orange;
+}
+
+@media(max-width:600px){
+    .header{
+        justify-content: center;
+    }
+    .logo{
+        width: 20vw;
+    }
+    .search_input{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        margin-top: 20px;
+        width: 160px;
+        height: 240px;
+        border-radius: 100%;
+        
+    }
+    .text{
+
+    }
+    [class^="text_"]:not(.text_1){
+        display: none;
+    }
 }
