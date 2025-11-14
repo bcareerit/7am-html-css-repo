@@ -133,8 +133,62 @@ Lists
 
     <dl></dl>. ----- definition list
 
+HTML Introduction
+HTML Headings
+HTML Paragraphs
+HTML Divisions
+Tables
+Forms
+Lists
+iframe
+fieldset
+anchor
+                            marquee
+images
 
+CSS
 
+CSS Introduction
+apply styles
+    external
+    internal
+    inline
+css specificity
+inline > id > class > element > universal
+
+selectors
+    element selector
+    id selector
+    class selector
+    decendent selector
+    attribute selector
+    universal selector (*)
+
+pseudo classes & pseudo elements
+
+css flex
+
+css grid
+
+css media queries (partial)
+
+dimensions
+    rem
+    em
+    px
+    %
+    vw & vh
+
+positions
+
+*************************************************************************************
+1) semantic elements. (<header></header>,......,<audio></audio>, <video></video>,....)
+
+2) media queries. (min-width, max-width, screen && break points)
+
+3) box-sizing : border-box;  // 
+
+4) revise flex concept
 
 
 
