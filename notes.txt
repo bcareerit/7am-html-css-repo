@@ -188,7 +188,32 @@ positions
 
 3) box-sizing : border-box;  // 
 
-4) revise flex concept
+4) revise flex concept. & show deploy
+
+
+box-sizing
+**********
+div{
+    width : 100px;
+    height : 100px;
+    border : 1px solid grey;
+    padding:20px;
+    box-sizing: border-box;
+}
+width : 102px;  98px;              width : 142px;   58px;
+height : 102px; 98px;            height : 142px;    58px;
+
+border-box
+**********
+original width includes padding and border
+
+content-box
+***********
+original width and height excludes border and padding
+
+
+
+
 
 
 

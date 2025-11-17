@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Revision</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .parent{
+               
+                height: 100vh;
+            }
+            .header{
+                height: 15%;
+                background-color: lightgray;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .header>img{
+                width: 14vw;   
+                margin-left: 10px;
+            }
+            .header>.menu{
+                margin-right: 10px;
+            }
+            .menu{
+                display: flex;
+                gap: 20px;
+            }
+            .menu>a{
+                text-decoration: none;
+                font-size: 20px;
+                background-color: orange;
+                padding: 10px;
+                border: 1px solid goldenrod;
+                color: white;
+                border-radius: 20px;
+            }
+            .main{
+                height: 75%;
+                background-color: lightpink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .main>section{
+                border: 1px solid gray;
+                padding: 20px;
+                border-radius: 20px;
+                text-align: center;
+            }
+            .main>section>p{
+                text-align: center;
+            }
+            .footer{
+                height: 10%;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- CONTAINER -->
+        <section class="parent">
+
+            <!-- FLEX ITEM - 1 -->
+            <section class="header">
+                <!-- CHILD1 -->
+                <img src="logo.png" alt="CareerIT">
+
+                <!-- CHILD2 -->
+                <section class="menu">
+                    <a class="menu_home" href="#">Home</a>
+                    <a class="menu_about" href="#">About</a>
+                    <a class="menu_contact" href="#">Contact</a>
+                    <a class="menu_blog" href="#">Blog</a>
+                    <a class="menu_signin" href="#">Login</a>
+                </section>
+            </section>
+
+            <!-- FLEX ITEM - 2-->
+            <section class="main">
+                <section class="main_dell">
+                    <img src="https://excelr-sb-images.s3.eu-north-1.amazonaws.com/laptop5.jpeg" alt="Dell">
+                    <p>Dell</p>
+                    <p>50000</p>     
+                </section>
+                
+                <section class="main_hp">
+                    <img src="https://excelr-sb-images.s3.eu-north-1.amazonaws.com/laptop2.jpeg" alt="HP">
+                    <p>Hp</p>
+                    <p>40000</p> 
+                </section>
+
+                <section class="main_acer">
+                    <img src="https://excelr-sb-images.s3.eu-north-1.amazonaws.com/laptop3.jpeg" alt="Acer">
+                    <p>Acer</p>
+                    <p>35000</p> 
+                </section>
+
+                <section class="main_mac">
+                    <img src="https://excelr-sb-images.s3.eu-north-1.amazonaws.com/laptop4.jpeg" alt="Mac">
+                    <p>Mac Book</p>
+                    <p>150000</p> 
+                </section>
+
+                <section class="main_lenovo">
+                    <img src="https://excelr-sb-images.s3.eu-north-1.amazonaws.com/laptop5.jpeg" alt="Lenovo">
+                    <p>Lenovo</p>
+                    <p>30000</p> 
+                </section>
+            </section>
+
+            <!-- FLEX ITEM - 3 -->
+            <section class="footer"></section>
+        </section>
+    </body>
+</html>
