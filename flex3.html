@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Flex Revision</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             *{
                 padding: 0;
@@ -20,7 +21,7 @@
                 align-items: center;
             }
             .header>img{
-                width: 14vw;   
+                width: 13vw;   
                 margin-left: 10px;
             }
             .header>.menu{
@@ -60,7 +61,40 @@
             .footer{
                 height: 10%;
                 background-color: lightblue;
+                display: flex;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: orchid;
             }
+
+            @media (max-width:576px){
+                .menu{
+                    display: none;
+                }
+                .header{
+                    justify-content: center;
+                }
+                .header>img{
+                    width: 20vw;
+                }
+            }
+
+            @media(min-width:576px) and (max-width:996px){
+                .main{}
+                [class^="main_"]>p{
+                    display: none;
+                }
+
+            }
+
+            /*
+                min-width and max-width
+                screen. (device screen)
+                print
+                speech
+            */
         </style>
     </head>
     <body>
@@ -116,7 +150,12 @@
             </section>
 
             <!-- FLEX ITEM - 3 -->
-            <section class="footer"></section>
+            <section class="footer">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
+                <i class="fa fa-instagram"></i>
+            </section>
         </section>
     </body>
 </html>
