@@ -1,0 +1,21 @@
+JAVASCRIPT
+**********
+    Scripting Language
+    Dynamic web pages
+    forms validations
+    ES13
+    ES Stands for ECMA Script
+    ECMA stands for Europian Computers Manufacturing Association
+    extension is ".js"
+    <script></script>
+    Execute --- Browser.  NodeJS
+    Sync Execution
+    Object Based Scripting Language
+    Ex.
+        document.  ---  html elements
+        console.   ---  debug
+        Date.      ---  Calender
+        localStorage ---  Browser localStorage
+        sessionStorage --  Browser sessionStorage
+        window -- Super Object. (Browser Properties)
+
