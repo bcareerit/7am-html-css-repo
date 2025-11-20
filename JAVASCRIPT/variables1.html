@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables - Examples</title>
+    </head>
+    <body>
+
+        <script>
+            const obj = {
+                key1 : "Hello",
+                key2 : "Welcome",
+                key3 : "Bye"
+            };
+            //obj = {}; //Uncaught TypeError: Assignment to constant variable.
+            // obj = {
+            //     key1 : "Hello1",
+            //     key2 : "Welcome1",
+            //     key3 : "Bye1"
+            // }; //Uncaught TypeError: Assignment to constant variable.
+
+            obj.key1 = "JS";
+            obj.key2 = "React";
+            obj.key4 = "MERN";
+            console.log(obj);
+        </script>
+
+
+        <!-- <script>
+            const arr1 = [10,20,30,40,50];
+            //arr1 = [];   //Uncaught TypeError: Assignment to constant variable.
+            //arr1 = [100,200,300,400,500];   //Uncaught TypeError: Assignment to constant variable.
+            
+            arr1[0] = 100;
+            arr1[1] = 200;
+            arr1[5] = 600;
+            console.table(arr1);
+        </script> -->
+
+
+        <!-- <script>
+            const x = 100;
+            x = 200;
+                //Uncaught TypeError: Assignment to constant variable.
+        </script> -->
+
+
+
+        <!-- <script>
+            document.write(x);
+            let x = 100;
+            
+                //declaration
+                //initilization
+                //accessing
+                
+                //var : undefined
+                //let : Uncaught ReferenceError: Cannot access 'x' before initialization
+        </script> -->
+
+
+        <!-- <script>
+            let x = 100;
+            {
+                let x = 200;    
+            }
+            document.write(x);   //100
+                //var : 200
+                //let : 100
+        </script> -->
+
+
+        <!-- <script>
+            let x = 100;
+            let x = 200;
+            document.write(x);
+                //var : 200
+                //let : Uncaught SyntaxError: Identifier 'x' has already been declared
+        </script> -->
+    </body>
+</html>

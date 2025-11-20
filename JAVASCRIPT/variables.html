@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables - Examples</title>
+    </head>
+    <body>
+        <script>
+
+            /*
+                symbol
+            */
+           var a = Symbol("Emp1");
+           var b = Symbol("Emp1");
+
+
+            /*
+                bigint
+                    large numbers
+                    2^53 - 1.  to -2^53 - 1
+                    suggix with "n"
+            */
+            var large = 123456789123456789123456789123456789123456789123456789n;
+            document.write(large,`<br>`);
+
+
+            /*
+                null
+                ****
+                    blank value / zero
+                    null --- 0
+            */
+            var y = null;
+            document.write(y,`<br>`);
+            document.write(y+10,`<br>`);
+
+
+            /*
+                undefined
+                NaN
+            */
+            var x;
+            document.write(x,`<br>`);
+            document.write(x+10,`<br>`);
+
+
+            /*
+                boolean
+                    1) true
+                    2) false
+            */
+            var flag = true;
+            document.write(flag,`<br>`);
+            var flag1 = false;
+            document.write(flag1,`<br>`);
+            
+
+            /*
+                string
+                    collection of characters
+                    1) ""       2) ''       3) `` (backtick)
+                    backtick released in ES6 version
+                    backtick called as template literal
+                    eazily we can refer one variable to another variable
+            */
+            var str1 = "Welcome";
+            var str2 = 'JS !!!';
+            var str3 = `${str1} to ${str2}`;
+            document.write(str3,`<br>`);
+
+
+            /*
+                number
+            */
+            var num1 = 100;
+            document.write(num1,"<br>");
+            var num2 = 100.12345;
+            document.write(num2,"<br>");
+            var num3 = 0x123ABC;
+            document.write(num3,"<br>");
+            var num4 = 0o123;
+            document.write(num4,"<br>");
+            var num5 = 0b1010;
+            document.write(num5,"<br>");
+
+
+        </script>
+    </body>
+</html>
