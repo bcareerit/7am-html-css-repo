@@ -119,8 +119,47 @@
                         -- 12 programs
         -->
 
+        <!--
+            IIFE
+            ****
+                Immidiate Invokable Functional Expression
+                when ever we define the function, it will execute immidiately
+                used to create the private variables
+                syntax.
+                    (function(param1,param2,param3,....param n){
+                        business logic
+                    })(arg1,arg2,arg3,....arg n);
 
+                    ((param1,param2,param3,....param n)=>{
+                        business logic
+                    })(arg1,arg2,arg3,....arg n)
+        -->
 
+        <!-- <script>
+            (function(){
+                document.write(`welcome to IIFE !!!`);
+            })()
+        </script> -->
+
+        <!-- <script>
+            let x = (function(){
+                return 100;
+            })()
+            document.write(x);
+        </script> -->
+
+        <!-- <script>
+            let x = (function(param1){
+                return `Welcome to ${param1}`;
+            })("JS");
+            document.write(x);
+        </script> -->
+        <script>
+            document.write(
+            (()=>{
+                return `Hello`;
+            })())
+        </script>
 
 
 
