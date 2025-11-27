@@ -6,7 +6,128 @@
     </head>
     <body>
 
+        <!-- 
+            pure functions
+
+            same input --- same output
+            output wont effect by any outside parameters like api calls, callbacks, hof's
+            
+            reusability 
+        -->
+        <!-- <script>
+            let add = (num1,num2)=>{
+                return num1 + num2;
+            }
+            console.log( add(10,5) );
+        </script> -->
+
+        <!-- <script>
+            let x = 100;
+
+            let add = (num1)=>{
+                return x + num1;
+            }
+            console.log(add(5));
+        </script> -->
+
         <script>
+            let num = ()=>{
+                return Math.random();
+            }
+            console.log( num() );
+        </script>
+
+
+
+
+        <!-- <script>
+            let test_func = (num1)=>{
+                return (num2)=>{
+                    let res = num1 ** num2;
+                    return res;
+                }
+            }
+            // let inner = test_func(2);
+            // let res = inner(3);
+            // document.write(res);
+            document.write( test_func(2)(3) );
+        </script> -->
+
+
+        <!-- <script>
+            function func_one(sub){
+                document.write(`welcome to ${sub}`,`<br>`);
+            }
+            function hof(func){
+                func(`JS !!!`);
+            }
+            hof(func_one);
+        </script> -->
+
+
+        <!--
+            Higher Order Functions
+            **********************
+                1) function taking another function as argument, 
+                2) function return another function 
+                3) both
+
+        -->
+
+
+
+
+        <!-- <script>
+            function *test_func(){
+                yield 100;
+                yield 200;
+                return 300;
+                yield 400;
+            }
+            let iterator = test_func();
+            for(let value of iterator){
+                console.log(value);
+            }
+        </script> -->
+
+
+
+
+        <!-- <script>
+            function *test_func(){
+                yield 100;
+                yield 200;
+                yield 300;
+                yield 400;
+                yield 500;
+            }
+            let iterator = test_func();
+            // console.log( iterator.next() );
+            // console.log( iterator.next() );
+            // console.log( iterator.next() );
+            // console.log( iterator.next() );
+            // console.log( iterator.next() );
+            // console.log( iterator.next() );
+
+            for(let i=0;i<5;i++){
+                console.log(iterator.next());
+            }
+        </script> -->
+
+
+
+        <!--
+            generator functions
+            *******************
+                by using generator functions, we will get control on execution
+                generator functions prefix with "*"
+                each statement starts from "yield"
+                next() is the predefined function to move cursor to next line
+                generator functions will return Iterators
+        -->
+
+
+        <!-- <script>
             function class_one(){}
             class_one.prototype.func_one = function(){
                 return 300;
@@ -14,7 +135,7 @@
             function class_two(){}
             class_two.prototype = Object.create(class_one.prototype);
             
-        </script>
+        </script> -->
 
 
 
