@@ -2,8 +2,283 @@
 <html>
     <head>
         <title>Functions-Example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
+
+        <script>
+            function class_one(){}
+            class_one.prototype.func_one = function(){
+                return 300;
+            }
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype);
+            
+        </script>
+
+
+
+        <!-- <script>
+            function class_one(){}
+            class_one.prototype.var_one = "ReactJS";
+
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype);
+            class_two.prototype.var_two = "NodeJS";
+
+            function class_three(){}
+            class_three.prototype = Object.create(class_two.prototype);
+            class_three.prototype.var_three = "MongoDB";
+
+            let obj1 = new class_three();
+            document.write(`${obj1.var_one} <br> ${obj1.var_two} <br> ${obj1.var_three}`);
+        </script> -->
+
+        
+        <!-- <script>
+            function class_one(){}
+            class_one.prototype.var_one = "Hello";
+            class_one.prototype.func_one = function(){
+                return "Welcome";
+            }
+            class_one.prototype.func_two = function(){
+                return "JS";
+            }
+            console.dir(class_one);
+            let obj1 = new class_one();
+            let x = obj1.var_one;
+            document.write(x,`<br>`);
+            let y = obj1.func_one();
+            document.write(y,`<br>`);
+        </script> -->
+
+
+        <!-- <script>
+            function class_one(){
+                this.func_one = function(){
+                    return "ReactJS";
+                }
+                this.func_two = function(){
+                    return "NodeJS";
+                }
+            }
+            let obj1 = new class_one();
+            let x = obj1.func_one();
+            document.write(x);
+
+            let y = obj1.func_two();
+            document.write(y);
+        </script> -->
+
+
+
+        <!-- <script>
+            function class_one(){
+                this.frontend = "ReactJS";
+                this.backend = "NodeJS";
+                this.database = "MongoDB";
+            }
+            let obj1 = new class_one();
+            let x = obj1.frontend;
+            document.write(x,`<br>`);
+
+            let y = obj1.backend;
+            document.write(y,`<br>`);
+
+            let z = obj1.database;
+            document.write(z,`<br>`);
+        </script> -->
+
+       
+       
+       
+        <!-- <script>
+            let addition = (num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num+5);
+                })
+            }
+            let subtraction = (num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num-3);
+                });
+            }
+
+            let consume = async ()=>{
+                let addRes = await addition(5);
+                let subRes = await subtraction(addRes);
+                console.log(addRes,subRes);
+            }
+            consume();
+        </script> -->
+
+
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                resolve("Hello");
+            });
+
+            let consume = async ()=>{
+                let res = await promise1;
+                console.log(res);
+            }
+            consume();
+        </script> -->
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                 setTimeout(()=>{
+                    resolve("ReactJS");
+                    setTimeout(()=>{
+                        resolve("Hello");
+                    },5000);
+                },0);  
+            })
+
+            let promise2 = new Promise((resolve,reject)=>{
+                 resolve("NodeJS");
+            })
+
+            promise1.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+
+            promise2.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+        </script> -->
+
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                 setTimeout(()=>{
+                    resolve("ReactJS");
+                },0);  //
+            })
+
+            let promise2 = new Promise((resolve,reject)=>{
+                 resolve("NodeJS");
+            })
+
+            promise1.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+
+            promise2.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+        </script> -->
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                 setTimeout(()=>{
+                    resolve("ReactJS");
+                },5000);
+            })
+
+            let promise2 = new Promise((resolve,reject)=>{
+                 setTimeout(()=>{
+                    resolve("NodeJS");
+                },0);
+            })
+
+            promise1.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+
+            promise2.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+        </script> -->
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("ReactJS");
+                },5000);
+            });
+            let promise2 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    reject("Error");
+                },10000);
+            });
+            let promise3 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("MongoDB");
+                },15000);
+            });
+
+            // Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+            //     console.log(posRes);
+            // }).catch((errRes)=>{
+            //     console.log(errRes);
+            // });
+
+            // Promise.race([promise1,promise2,promise3]).then((posRes)=>{
+            //     console.log(posRes);
+            // }).catch((errRes)=>{
+            //     console.log(errRes);
+            // });
+
+            // Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+            //     console.log(posRes);
+            // }).catch((errRes)=>{
+            //     console.log(errRes);
+            // });
+
+            Promise.allSettled([promise1,promise2,promise3]).then((posRes)=>{
+                console.log(posRes);
+            }).catch((errRes)=>{
+                console.log(errRes);
+            });
+        </script> -->
+
+
+        <!-- <script>
+            let make_api_call = ()=>{
+                return new Promise((resolve,reject)=>{
+                    try{
+                        $.ajax({
+                            method:"GET",
+                            url:"https://jsonplaceholder.typicode.com/posts/1",
+                            success:(res)=>{
+                                resolve(res);
+                            },
+                            error:(err)=>{
+                                reject(err)
+                            }
+                        })
+                    }catch(err){
+                        console.log(err);
+                    }
+                });
+            }
+            make_api_call().then((posRes)=>{
+                let {body,id,title,userId} = posRes;
+                document.write(`Body : ${body} <br> id : ${id} <br> title : ${title} <br> userId: ${userId}`);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+        </script> -->
+
+
+
+
+
+
         <!-- <script>
             /*
                 Functions
@@ -154,12 +429,50 @@
             })("JS");
             document.write(x);
         </script> -->
-        <script>
+        <!-- <script>
             document.write(
             (()=>{
                 return `Hello`;
             })())
-        </script>
+        </script> -->
+
+        <!-- <script>
+            let addition = (num,callback)=>{
+                callback(num+5,true);
+            }
+            let subtraction = (num,callback)=>{
+                callback(num-3,false);
+            }
+            addition(5,(addRes,flag)=>{
+                if(flag){
+                   subtraction(addRes,(subRes,flag)=>{
+                        if(!flag){
+                            document.write(subRes);
+                        }
+                   })
+                }
+            })
+            //callback hell
+            //not recomended in real time (confusion)
+            //promises
+        </script> -->
+
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                resolve("welcome to promises");
+            });
+            promise1.then((posRes)=>{
+                document.write(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            });
+        </script> -->
+
+
+
+
+
 
 
 
