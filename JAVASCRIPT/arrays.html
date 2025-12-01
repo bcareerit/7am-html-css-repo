@@ -5,6 +5,145 @@
     </head>
     <body>
 
+        <script>
+            let arr1 = [10,20,30];
+            let arr2 = [40,50,60];
+            let new_arr1 = [...arr1,...arr2];
+            console.log(new_arr1);
+
+            let new_arr2 = arr1.concat(arr2);
+            console.log(new_arr2);
+        </script>
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50];
+            let [e1,e2,...arr2] = arr1;
+            let [e3,...arr3] = arr2;
+            let [e4,...arr4] = arr3;
+            let [e5] = arr4;
+            console.log(e1,e2,e3,e4,e5);
+        </script> -->
+
+
+        <!-- <script>
+            //ES6
+            let arr1 = [10,20,30,40,50];
+            let [e1,e2,e3,e4,e5] = arr1;
+            console.log(e1);
+            console.log(e5);
+        </script> -->
+
+
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            arr1.copyWithin(1,5);
+            console.log(arr1);
+
+            let arr2 = [10,20,30,40,50,60,70,80,90,100];
+            arr2.copyWithin(0,5);
+            console.log(arr2);
+        </script> -->
+
+
+        <!-- <script>
+            let arr1 = [10,10,10,10,10];
+            console.log(
+                arr1.fill(20,1).fill(30,2,3).fill(40,3,4).fill(50,4)
+            );
+        </script> -->
+
+        <!-- <script>
+            let str = "Hello";
+            let rev = "";
+            for(let i=0;i<=str.length;i++){
+                rev+= str.charAt(str.length-i);
+            }
+            console.log(rev);
+        </script> -->
+
+
+
+        <!-- <script>
+            let str = "welcome to js";
+            console.log(
+                str.split(" ").map(element=>element.split("").reverse().join(""))
+            );
+        </script> -->
+
+
+        <!-- <script>
+            console.log(
+                Array.from("Hello").reverse().toString().replace(",","")
+            );
+            console.log(
+                Array.from("JavaScript").reverse().toString().replace(/,/g,"")
+            );
+            console.log(
+                Array.from("React").reverse().toString().replaceAll(",","")
+            );
+            console.log(
+                "Angular".split("").reverse().join("")
+            );
+        </script> -->
+
+
+
+
+        <!-- <script>
+            let str = "welcome to react";
+            console.log(
+                str.substring(0,7)
+            );
+            console.log(
+                str.substring(8,10)
+            );
+            console.log(
+                str.substring(11)
+            );
+        </script> -->
+
+
+
+        <!-- <script>
+            let str = "welcome to js";
+            console.log( str.substr(0,7) );
+            console.log( str.substr(8,2) );
+            console.log( str.substring(11) );
+            console.log( str.substr(-2) );
+            console.log( str.substr(-5,2) );
+            console.log( str.substr(-13,7) );
+        </script> -->
+
+
+
+
+        <!-- <script>
+            let str = "CareerIT";
+            let new_str = str.padStart(11,"*");
+            let new_str1 = new_str.padEnd(14,"*");
+            console.log(new_str1);
+        </script> -->
+
+
+        <!-- <script>
+            let str = " welcome ";
+            console.log(
+                str.trimStart().length
+            );
+            console.log(
+                str.trimEnd().length
+            );  
+            console.log(
+                str.trim().length
+            );
+        </script> -->
+
+
+
+
         <!-- <script>
             let arr1 = [10,20,30,10,20,10,10,20];
             console.log(
