@@ -1,0 +1,85 @@
+JavaScript is the Scripting Language
+JavaScript, used to develop dynamic webpages
+JavaScript also used to implement forms validations
+JavaScript, released by "Netscape"
+current version is ES13
+ES Stands for ECMA Script
+ECMA Stands for Europian Computers Manufacturing Association
+<script></script> tag, used to include JavaScript to HTML pages
+JavaScript files extension must be ".js"
+we will execute JavaScript in two ways
+1) browser
+     interpreter
+2) NodeJS
+      node
+below command is used to execute JavaScript with NodeJS
+> node demo.js
+JavaScript supports two types of comments
+1) single line comment
+    syntax.
+            //
+2) multi line comment
+    syntax.
+            /*
+
+            */
+commented code won't execute by browser
+comments increases application readability
+JavaScript is not Object Oriented but it is a Object Based Scripting Language
+Browsers provided predefined objects, as a JavaScript Developer we are able to use those objects
+1) document
+    document object, used to manipulate the HTML Elements
+    document object also used to display data on webpage
+    Ex.
+        document.write("welcome to js");
+2) console
+    console object used to debug JavaScript applications
+    Ex.
+        console.log("Debugging Soon");
+        console.table( [100,200,300,400,500] );
+    below shortcut, used to open the console
+    right click --> inspect --> console
+    (browser)
+
+3) Date
+    Date object, used to work with the Calender
+    Ex.
+        x = new Date();
+        document.write(x);
+
+4) localStorage
+     localStorage object, used to work with browser localStorage
+
+5) sessionStorage
+    sessionStorage object, used to work with the browser sessionStorage
+
+6) window
+    window is the super object in JavaScript
+    window object, used to work with the browser properties
+
+
+JavaScript code will execute line by line with the help of either interpreter or node
+execution of code line by line called as Synchronous execution
+JavaScript is Single Threaded
+
+JavaScript is not secured Scripting Language, because we are able to read the source code 
+by using following shortcut
+
+right click --> view pagesource
+
+JavaScript used to develop both "client side" and "server side" applications
+
+client side applications            server side applications
+************************            ************************
+Angular                             NodeJS
+ReactJS
+VueJS
+JQuery
+
+when ever HTML document loaded into browser engine successfully, automatically 
+document object will create by browser engine
+document object also called as DOM Object (or) Real DOM Object
+DOM Stands for document object model
+document object contains hirarichy called as DOM Tree Structure
+Traverssing in DOM Object called as DOM Tree Traverssing
+manipulations in document object called as DOM manipulations

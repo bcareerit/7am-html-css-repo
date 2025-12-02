@@ -1,0 +1,161 @@
+ReactJS
+*******
+    ReactJS is JavaScript library
+    ReactJS used to develop web applications(user interfaces)
+    ReactJS Released by facebook
+    Current version is 19.X
+
+Features of ReactJS
+*******************
+1) Components
+    each portion of webpage called as component
+    as a react developer, we are able to create more than one component
+    components are reusable
+    we can include one component to another component
+    we have two types of components
+    a) functional components
+    2) class components
+
+    what are the differences between class components and functional components ?
+    ****************************************************************************************
+            class components                    functional components
+    ****************************************************************************************
+    1) class components are also            functional components are also called as
+       called as container                  temparary components
+       components
+
+    2) we can enhance functionality         we can enhance functionality by using hooks
+       by using life cycle methods          (hooks relesed in 18.x)
+
+    3) we can create object to              we are unable to create object to class
+       class components                     components
+    ****************************************************************************************
+
+2) JSX
+******
+    JSX Stands for JavaScript and XML
+    in JSX, we will write "HTML inside JavaScript"
+    JSX is used to develop web applications (ReactJS Applications)
+    Babel is the tool, used to convert "JSX to equalent JS"
+
+    what are the differences between JSX and TSX ?
+
+    **************************************************************************
+                JSX                                     TSX
+    **************************************************************************
+    1) JSX Stands for JavaScript                    TSX Stands for TypeScript
+       and XML                                      and XML
+
+    2) we will include HTML inside                  we will include html inside
+       JavaScript                                   TypeScript
+
+    3) Type Checking not available                  Type Checking available
+       Ex.                                          Ex.
+            let x = 100;                                    let x:number = 100;
+
+    4) extension must be ".jsx"                     extension must be ".tsx"
+
+    5) suitable for small scale                     suitable for medium and large scale 
+       web applications                             web applications
+
+    6) used to catch the errors while               used to catch the errors while 
+       running the applications                     development
+    ***************************************************************************************
+
+3) expression
+    expression is used to display dynamic data (render dynamic data)
+    expression also called as interpolation
+    we will represent expression/interpolation with the help of {}
+    Ex.
+            <h1>{"Welcome"}</h1>
+            <p>{10+10}</p>
+
+            {
+                10>9 ? <h1>{"ReactJS"}</h1> : <h1>{"NodeJS"}</h1>
+            }
+
+4) state
+    state is used to manage the component data
+    state is mutable
+
+    functional components
+    *********************
+    useState() hook, used to define state in functional components
+    Ex.
+            const [x,setX] = useState("CareerIT");
+            {x}         //CareerIT
+            setX("NodeJS");
+            {x}         //NodeJS
+
+            const [num1,setNum1] = useState(200);
+            const [num2,setNum2] = useState(100);
+            {num1+num2}    //300
+            {num1-num2}    //100
+
+            const [flag,setFlag] = useState(true);
+            {
+                flag ? {num1} : {num2}                  //200
+            }
+
+            {
+                !flag ? {num1} : {num2}                 //100
+            }
+
+            const [arr,setArr] = useState( [10,20,30,40,50] );
+            {
+                arr.map((element,index)=>{
+                    return(<p key={index}>{element}....{index}</p>)
+                })
+            }
+
+            const [obj,setObj] = useState({"frontend":"ReactJS", "backend":"NodeJS"});
+            {obj.frontend} //ReactJS
+            {obj.backend}  //NodeJS
+
+
+            const [emps,setEmps] = useState( [{"eno":111,"ename":"Emp1","esal":10000},
+                                              {"eno":222,"ename":"Emp2","esal":20000},
+                                              {"eno":333,"ename":"Emp3","esal":30000}] );
+            <table>
+                ---
+                ---
+                ---
+                ---
+                {
+                   emps.map((element,index)=>{
+                        return(<tr key={index}>
+                            <td>{element.eno}</td>
+                            <td>{element.ename}</td>
+                            <td>{element.esal}</td>
+                        </tr>)
+                   }) 
+                }
+            </table>
+
+components
+***********
+            HTML Comment
+            <!-- -->
+            
+            CSS Comment
+            /*
+
+            */
+
+            JS Comments
+            //. --- single
+            /*  --- multilibe
+
+            */
+
+            React Comment
+            {
+                /*
+                
+                */
+            }
+
+
+
+
+    
