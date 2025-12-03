@@ -155,6 +155,53 @@ components
                 */
             }
 
+5)props
+*******
+    child component receiving data from parent component with the help of "props"
+    props are immutable
+
+what are the differences between state and props ?
+
+------------------------------------------------------------------------------
+        state                                   props
+------------------------------------------------------------------------------
+1) state used to manage                 child component receiving data from
+   the component data                   parent component with the help of props
+
+2) state is mutable                     props are immutable
+------------------------------------------------------------------------------
+
+6) single page applications
+****************************
+    loading one component to another component without refreshing called as 
+    single page applications
+    navigation between components called as "Routing"
+    "<Route></Route>" is the predefined component, used to implement the Routing
+    "<Routes></Routes>" is the predefined component, used to encapsulate the Routings
+    "<BrowserRouter></BrowserRouter> is the predefined component used to implement 
+     the dynamic Routing
+    "<HashRouter></HashRouter> is the predefined component used to implement 
+     the static Routing
+    "<Link></Link>. or <NavLink></NavLink> components are predefined, used to create the 
+    Routing paths (hyperlinks)
+    useParams() hook, used to read the Routing parameters 
+    useNavigate() hook used to implement Routing with the help of events
+    "/" called as default Routing
+    "*" called as wild Routing
+
+7) Babel
+    Babel used to convert "latest(modern) JavaScript" to "older version JavaScript"
+    Babel makes to run our project into all browsers
+    Babel also converting JSX code to JavaScript
+    Babel also called as JavaScript Compiler / JavaScript Transpiler
+
+8) Virtual DOM
+    Virtual DOM is a copy of the "real webpage" kept in memory
+    when ever changes happens in webpage, automatically Virtual DOM Updates first, not real DOM
+    Virtual dom compares with newly created Virtual DOM (another Virtual DOM available in memory)
+    Virtual DOM will update exact information(exact changes) happened to Real DOM
+    Real DOM will update only particular portion insted of entire DOM
+    Virtual DOM, maked applications are faster
 
 
 

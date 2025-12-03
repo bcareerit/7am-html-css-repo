@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON-API CALL</title>
+    </head>
+    <body>
+
+        <script>
+            let obj1 = {
+                key1 : "React",
+                key2 : "Node"
+            };
+            obj1.key1 = "ReactJS";
+            obj1.key2 = "NodeJS";
+            obj1.key3 = "MongoDB";
+            console.log(obj1);
+
+            for(let key in obj1){
+                delete obj1[key];
+            }
+            console.log(obj1);
+        </script>
+
+
+        <!-- <script>
+            let obj1 = {
+                key1 : "Hello",
+                key2 : "Welcome"
+            };
+            console.log( obj1.hasOwnProperty("key1") );
+            console.log( obj1.hasOwnProperty("key3") );
+
+            delete obj1.key1;
+            delete obj1.key2;
+
+            Object.keys(obj1).length>0 ? console.log("Not Empty !!!"): console.log("Empty !!!");
+            Object.values(obj1).length>0 ? console.log("Not Empty !!!"): console.log("Empty !!!");
+        </script> -->
+
+
+
+        <!-- <script>
+            let obj1 = {
+                key1 : "Hello",
+                key2 : "Welcome"
+            };
+            delete obj1.key1;
+            console.log(obj1);
+        </script> -->
+
+
+
+        <!-- <script>
+            const make_api_call = async ()=>{
+                const res = await fetch("https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0"); 
+                const data = await res.json();
+                const {product,init,dataseries} = data;
+               
+                document.write(`
+                    <table border="1" align="center" cellpadding="10" cellspacing="10">
+                        <tr>
+                            <th>timepoint</th>
+                            <th>cloudcover</th>
+                            <th>seeing</th>
+                            <th>transparency</th>
+                            <th>lifted_index</th>
+                            <th>prec_type</th>
+                            <th>rh2m</th>
+                            <th>temp2m</th>
+                            <th>direction</th>
+                            <th>speed</th>
+                        </tr>
+                   
+                `);
+                dataseries.forEach((element,index)=>{
+                    
+                    const {direction,speed} = element.wind10m;
+                    console.log(direction,speed);
+                    document.write(`<tr>
+                            <td>${element.timepoint}</td>
+                            <td>${element.cloudcover}</td>
+                            <td>${element.seeing}</td>
+                            <td>${element.transparency}</td>
+                            <td>${element.lifted_index}</td>
+                            <td>${element.prec_type}</td>
+                            <td>${element.rh2m}</td>
+                            <td>${element.temp2m}</td>
+                            <td>${direction}</td>
+                            <td>${speed}</td>
+                        </tr>`);
+                })
+                document.write(`</table>`);
+            }
+            make_api_call();
+        </script> -->
+    </body>
+</html>

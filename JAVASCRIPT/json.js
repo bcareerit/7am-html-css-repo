@@ -86,6 +86,59 @@
 // let new_obj1 = Object.assign(obj1,obj2,obj3);
 // console.log(new_obj1);
 
+// let obj1 = {
+//     key1 : "Hello"
+// };
+// console.log( typeof obj1 );
+// let str = JSON.stringify(obj1);
+// console.log( typeof str );
+// let obj2 = JSON.parse(str);
+// console.log( typeof obj2 );
+
+// let obj1 = {
+//     key1 : "Hello"
+// };
+// Object.defineProperty(obj1,"key2",{value:"JSON",writable:false});
+// //Read
+// console.log(obj1.key1, obj1.key2);
+
+// //update
+// obj1.key1 = "React";
+// obj1.key2 = "NodeJS";
+// console.log(obj1.key1, obj1.key2);
+
+// //delete
+// delete obj1.key1;
+// delete obj1.key2;
+// console.log(obj1.key1, obj1.key2);
+
+
+// let obj1 = {
+//     key1 : "React"
+// };
+// Object.defineProperties(obj1,{
+//     key2:{value:"NodeJS",writable:true},
+//     key3:{value:"MongoDB",writable:false}
+// });
+// //read
+// console.log(obj1.key1, obj1.key2, obj1.key3);
+// //update
+// obj1.key1 = "ReactJS";
+// obj1.key2 = "Node";
+// obj1.key3 = "Mongo";
+// console.log(obj1.key1, obj1.key2, obj1.key3);
+// //delete
+// delete obj1.key1;
+// delete obj1.key2;
+// delete obj1.key3;
+// console.log(obj1.key1, obj1.key2, obj1.key3);
+
+
+
+
+
+
+
 
 
 
