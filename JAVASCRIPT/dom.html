@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Manipulations</title>
+    <style>
+        .c1 {
+            color: green;
+        }
+
+        .c2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>LOGIN FORM</legend>
+        <input type="text" id="uname" placeholder="enter user name">
+        <br><br>
+        <input type="password" id="upwd" placeholder="enter password">
+        <br><br>
+        <button>Login</button>
+        <br><br>
+        <h1 id="res"></h1>
+    </fieldset>
+    <script>
+        document.querySelector("button").addEventListener("click",()=>{
+            let x = document.getElementById("uname").value;
+            let y = document.getElementById("upwd").value;
+            let h1 = document.getElementById("res");
+            if(x == "careerit" && y == "careerit@123"){
+                if(h1.classList.contains("c2")){
+                    h1.classList.remove("c2");
+                }
+                h1.innerHTML = "Login Success";
+                h1.classList.add("c1");
+            }else{
+                if(h1.classList.contains("c1")){
+                    h1.classList.remove("c1");
+                }
+                h1.innerHTML = "Login Fail";
+                h1.classList.add("c2");
+            }
+        });
+    </script>
+
+
+    <!-- <p></p>
+        <script>
+            let p = document.querySelector("p");
+            p.setAttribute("class","c1");
+            console.log(p.hasAttribute("class"));
+            console.log(p.getAttribute("class"));
+            p.removeAttribute("class");
+            console.log(p.hasAttribute("class"));
+        </script> -->
+
+
+    <!-- <div id="my_div">
+
+        </div>
+        <script>
+            let p = document.createElement("p");
+            p.innerHTML = "CareerIT";
+            let div = document.getElementById("my_div");
+            div.appendChild(p);
+
+            let h1 = document.createElement("h1");
+            h1.innerHTML = "HTML & CSS";
+            div.insertBefore(h1,p);
+
+            let xerox_p = p.cloneNode(true);
+            div.appendChild(xerox_p);
+
+            div.removeChild(h1);
+        </script> -->
+
+
+    <!-- <p></p>
+        <p></p>
+        <p></p>
+        <h1 class="c1"></h1>
+        <h1 class="c1"></h1>
+        <h1 class="c1"></h1>
+        <script>
+            // let first_p = document.querySelector("p");
+            // first_p.innerHTML = "Hello";
+
+            // let first_h1 = document.querySelector(".c1");
+            // first_h1.innerHTML="JS";
+            // console.log(first_h1);
+
+            let all_p = document.querySelectorAll("p");
+            for(let p of all_p){
+                p.innerHTML = "<i>Hello</i>";
+            }
+
+            let all_h1 = document.querySelectorAll(".c1");
+            for(let h1 of all_h1){
+                h1.innerHTML = "<i>Hello</i>";
+            }
+        </script> -->
+
+
+    <!-- <p class="c1"></p>
+        <p class="c1"></p>
+        <p class="c1"></p>
+        <script>
+            let all_p = document.getElementsByClassName("c1");
+            for(let p of all_p){
+                p.innerHTML = "<i>Hello</i>";
+            }
+        </script> -->
+
+
+    <!-- <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <script>
+            let all_p = document.getElementsByTagName("p");
+            // all_p[0].innerHTML = "<i>Hello</i>";
+            // all_p[1].innerHTML = "<i><b>Hello</b></i>";
+
+            for(let p of all_p){
+                p.innerHTML = "<i>Hello</i>";
+            }
+        </script> -->
+
+
+
+    <!-- <input type="text" id="uname" placeholder="enter user name">
+        <button onclick="read_data()">Read</button>
+        <script>
+            const read_data = ()=>{
+                document.getElementById("uname").value = "admin";
+            }
+        </script> -->
+
+
+
+    <!-- <input type="text" id="uname" placeholder="enter user name"> 
+        <button onclick="read_data()">Read</button>
+        <script>
+            const read_data = ()=>{
+                let x = document.getElementById("uname").value;
+                console.log(x);
+            }
+        </script> -->
+
+
+    <!-- <h1 id="my_h1"></h1>
+        <script>
+            //document.getElementById("my_h1").innerHTML = "<i>Hello,CareerIT</i>";
+            document.getElementById("my_h1").innerText = "<i>Hello,CareerIT</i>";
+        </script> -->
+</body>
+
+</html>

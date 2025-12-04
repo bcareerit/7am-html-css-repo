@@ -203,6 +203,95 @@ what are the differences between state and props ?
     Real DOM will update only particular portion insted of entire DOM
     Virtual DOM, maked applications are faster
 
+9) state management
+      sharing data from source component to destination component through sevaral 
+    interdependent components called as "props drilling"
+    state management is used to overcome props drilling
+    we will implement state management in two ways
+    1) Context API
+    2) Redux
+
+    what are the differences between Context API & Redux ?
+
+    **************************************************************************
+            Context API                     Redux
+    **************************************************************************
+    1) Context API provided         Redux provided by 3rd party
+       by facebook
+
+    2) Context API suitable for     Redux suitable for medium and large scale web
+       small scale web applications applications
+
+    3) suitable for static data     suitable for dynamic data
+
+    4) debugging difficult          debugging eazy
+
+    5) build size(project size)     build size (project size) increases
+       never increases
+    **************************************************************************
+
+10) Hooks
+     Hooks enhances functional component "functionality"
+     Hooks relased in React 18.x
+     a) useState()                  h) useCallBack()
+     b) useRef()                    i) useMemo()
+     c) useEffect()                 j) use()
+     d) useParams()                     ---
+     e) useNavigate()                   ---
+     f) createContext()                 ---
+     g) useContext()                    ---
+
+Software Installation
+*********************
+download and install NodeJS
+
+website : https://nodejs.org/en/download
+
+what is npm ?
+    npm Stands for "node packaging manager"
+    npm available in NodeJS
+    npm used to download,install,update,uninistall and manage the libraries/packages 
+    for JavaScript applications
 
 
-    
+what are the differences between npm and yarn ?
+
+**************************************************************************
+            npm                             yarn
+**************************************************************************
+1) npm given by NodeJS Team             yarn given by facebook
+
+2) npm used to manage the               yarn also used to manage
+   libraries                            the libraries
+
+3) npm is slightly slower               yarn is slightly faster
+   compared to yarn                     compared to npm
+
+4) internet mandatory to                internet not required to
+   install downloaded                   install downloaded packages
+   packages
+**************************************************************************
+
+Installation of yarn
+> npm install -g npm@11.6.4
+> npm install -g yarn
+> yarn -v
+
+explain vite ?
+    vite is a tool, used to create and run modern web applications
+    by using vite tool, we are able to create
+    1) angular applications
+    2) react applications
+    3) venillajs
+    4) NextJS
+    ---
+    ---
+    ---
+    vite supports HMR (Hot Module Replacement)
+
+what is HMR ?
+    when ever we change the code, automatically changed portion will update on screen 
+    insted of entire screen
+
+steps to create react applications
+**********************************

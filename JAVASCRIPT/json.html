@@ -7,6 +7,82 @@
 
         <script>
             let obj1 = {
+                key1 : "Hello"
+            };
+
+            let xerox = {...obj1};
+
+            obj1.key2 = "React";
+            xerox.key2 = "Node";
+            console.log(obj1);
+            console.log(xerox);
+        </script>
+
+
+
+        <!-- <script>
+             let obj1 = {
+                key1 : "Hello"
+            };
+            Object.seal(obj1);
+
+            //read
+            console.log(obj1.key1);
+
+            //update
+            obj1.key1 = "Welcome"
+            console.log(obj1.key1);
+
+            //delete
+            delete obj1.key1;
+            console.log(obj1.key1);
+
+            //write
+            obj1.key2 = "JS";
+            console.log(obj1);
+        </script> -->
+
+
+
+        <!-- <script>
+            let obj1 = {
+                key1 : "Hello"
+            };
+            Object.freeze(obj1);
+
+            //read
+            console.log( obj1.key1 );
+
+            //update
+            obj1.key1 = "Welcome";
+            console.log( obj1.key1 );
+
+            //delete
+            delete obj1.key1;
+            console.log( obj1.key1 );
+
+            //write
+        </script> -->
+
+
+
+
+        <!-- <script>
+            let obj1 = {
+                key1 : "Hello",
+                key2 : "Welcome"
+            };
+            let arr1 =  Object.entries(obj1);
+            let obj2 = Object.fromEntries(arr1);
+            console.log(obj2);
+
+        </script> -->
+
+
+
+
+        <!-- <script>
+            let obj1 = {
                 key1 : "React",
                 key2 : "Node"
             };
@@ -19,7 +95,7 @@
                 delete obj1[key];
             }
             console.log(obj1);
-        </script>
+        </script> -->
 
 
         <!-- <script>
