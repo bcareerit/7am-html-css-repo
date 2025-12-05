@@ -132,8 +132,8 @@ Features of ReactJS
                 }
             </table>
 
-components
-***********
+Comments
+********
             HTML Comment
             <!-- -->
             

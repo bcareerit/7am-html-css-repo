@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Call,Apply and Bind</title>
+    </head>
+    <body>
+        <script>
+            function test(num1,num2){
+                document.write(this.num3 + num1 + num2);
+            };
+            let obj = {
+                "num3":300
+            };
+            // test.call(obj,100,200);
+            
+            //let arr1 = [100,200];
+            //test.apply(obj,arr1);
+
+            let new_func = test.bind(obj);
+            new_func(100,200);
+        </script>
+    </body>
+</html>

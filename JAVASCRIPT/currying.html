@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currying</title>
+    </head>
+    <body>
+        <script>
+            // let addition = (num1,num2,num3)=>{
+            //     return num1 + num2 + num3;
+            // }
+            // let res = addition(30,20,10);
+            // document.write(res);
+
+            let addition = num1=>num2=>num3=>num1 + num2 + num3;
+            let res = addition(30)(20)(10);
+            document.write(res);
+
+            // let step1 = addition(30);
+            // let step2 = step1(20);
+            // let res = step2(10);
+            // console.log(res);
+        </script>
+    </body>
+</html>

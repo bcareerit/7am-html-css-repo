@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closures</title>
+    </head>
+    <body>
+        <script>
+            let outer = ()=>{
+                let count = 0;
+                let x =  ()=>{
+                    count++;
+                    document.write("Count :",count,`<br>`);
+                }
+                console.dir(x);
+            }
+            outer();
+        </script>
+    </body>
+</html>
