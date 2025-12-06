@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events - Loop</title>
+        <style>
+            .parent{
+                width: 200px;
+                height: 200px;
+                border: 1px solid gray;
+            }
+            .child{
+                width: 140px;
+                height: 140px;
+                border: 1px solid red;
+                position: relative;
+                left: 30px;
+            }
+            .subchild{
+                width: 100px;
+                height: 100px;
+                border: 1px solid green;
+                position: relative;
+                left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            Parent !!!
+            <div class="child">
+                Child !!!
+                <div class="subchild">
+                    Subchild !!!
+                </div>
+            </div>
+        </div>
+        <script>
+            document.querySelector(".parent").addEventListener("click",()=>{
+                console.log("Parent !!!");
+            },true);
+            document.querySelector(".child").addEventListener("click",()=>{
+                console.log("Child !!!");
+                
+            },true);
+            document.querySelector(".subchild").addEventListener("click",(event)=>{
+                console.log("Subchild !!!");
+                // event.stopPropagation();
+            },true);
+        </script>
+    </body>
+</html>
+

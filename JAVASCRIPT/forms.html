@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms with validations</title>
+        <link rel="stylesheet" href="forms.css">
+        <script src="forms.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <form name="regForm" onsubmit="return register()">
+                <table>
+                    <tr>
+                        <td>
+                            <label>First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="fname" placeholder="enter first name">
+                        </td>
+                        <td>
+                           <span id="fname_errors"></span> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Last Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="lname" placeholder="enter last name">
+                        </td>
+                        <td>
+                           <span id="lname_errors"></span> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="upwd" placeholder="enter password">
+                        </td>
+                        <td>
+                           <span id="upwd_errors"></span> 
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td>
+                            <label>Conf Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="cupwd" placeholder="enter confirm password">
+                        </td>
+                        <td>
+                           <span id="cupwd_errors"></span> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                        </td>
+                        <td>
+                            <input type="email" name="uemail" placeholder="enter email">
+                        </td>
+                        <td>
+                           <span id="uemail_errors"></span> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Mobile</label>
+                        </td>
+                        <td>
+                            <input type="tel" name="ucontact" placeholder="enter mobile number">
+                        </td>
+                        <td>
+                           <span id="ucontact_errors"></span> 
+                        </td>
+                    </tr>
+
+                    
+                    
+                    
+                    
+                    
+                    <tr>
+                        <td>
+                            <input type="submit" value="Register">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>

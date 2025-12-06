@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+        <script>
+            let register = ()=>{
+                let fname = document.forms["regForm"]["fname"].value;
+                let arr1 = [];
+                if(/^$/.test(fname)){
+                    arr1.push("first name can't be left blank !!!");
+                }else if(!/^[A-Za-z0-9]{5,8}$/.test(fname)){
+                    arr1.push("please follow validation rules !!!");
+                }
+                document.getElementById("fname_errors").innerHTML = arr1.join("")
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="regForm" onsubmit="return register()">
+            <table>
+
+                <tr>
+                    <td>
+                        <label>First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" placeholder="enter user name">
+                    </td>
+                    <td>
+                        <span id="fname_errors"></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
