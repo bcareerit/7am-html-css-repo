@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>preventDefault() - JS</title>
+        
+    </head>
+    <body>
+        <form name="testForm" onsubmit="return register(event)">
+            <input type="text" name="username" placeholder="enter user name">
+            <input type="submit">
+        </form>
+        <script>
+            function register(event){
+                event.preventDefault();
+                let username = document.forms["testForm"]["username"].value;
+                console.log(username);
+                return false;
+            }
+        </script>
+    </body>
+</html>
