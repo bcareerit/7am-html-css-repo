@@ -13,8 +13,10 @@ import State1 from './components/State1.jsx'
 import State2 from './components/State2.jsx'
 import State3 from './components/State3.jsx'
 import State4 from './components/State4.jsx'
+import State5 from './components/State5.jsx'
+import Parent from "./components/Parent.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <State2></State2>
+    <Parent></Parent>
   </StrictMode>,
 )
