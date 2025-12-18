@@ -15,8 +15,13 @@ import State3 from './components/State3.jsx'
 import State4 from './components/State4.jsx'
 import State5 from './components/State5.jsx'
 import Parent from "./components/Parent.jsx"
+import Events from './components/Events.jsx'
+import Parent1 from './components/Parent1.jsx'
+import Master from './components/Master.jsx'
+import Major from './components/Major.jsx'
+import Miniproject1 from './components/Miniproject1.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Parent></Parent>
+    <Miniproject1></Miniproject1>
   </StrictMode>,
 )
