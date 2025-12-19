@@ -20,8 +20,9 @@ import Parent1 from './components/Parent1.jsx'
 import Master from './components/Master.jsx'
 import Major from './components/Major.jsx'
 import Miniproject1 from './components/Miniproject1.jsx'
+import Events1 from './components/Events1.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Miniproject1></Miniproject1>
+    <Events1></Events1>
   </StrictMode>,
 )
