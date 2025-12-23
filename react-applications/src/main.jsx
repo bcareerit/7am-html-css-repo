@@ -21,8 +21,13 @@ import Master from './components/Master.jsx'
 import Major from './components/Major.jsx'
 import Miniproject1 from './components/Miniproject1.jsx'
 import Events1 from './components/Events1.jsx'
+import UseRefHook from "./components/UseRefHook.jsx"
+import Demo1 from './components/Demo1.jsx'
+import Demo2 from './components/Demo2.jsx'
+import Demo3 from './components/Demo3.jsx'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Events1></Events1>
+    <Demo3></Demo3>
   </StrictMode>,
 )
